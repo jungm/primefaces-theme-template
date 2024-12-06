@@ -23,6 +23,17 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>themes/</directory>
+                <excludes>
+                    <exclude>**/*.scss</exclude>
+                </excludes>
+
+                <targetPath>META-INF/resources</targetPath>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
